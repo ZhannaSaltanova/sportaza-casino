@@ -17,7 +17,7 @@ h2 {
     font-size: 28px;
     color: #212121;
     font-weight: 700;
-    margin: 10px 10px;
+    margin: 10px 0px;
     text-align: left;
 }
 h3 {
@@ -74,7 +74,6 @@ p {
 .header {
     display: flex;
     justify-content: flex-start;
-    gap:50px;
     align-items: center;
     background: #fff;
     box-shadow: 0 10px 16px rgba(75, 74, 120, .11);
@@ -85,8 +84,8 @@ p {
     top: 0;
     width: 100%;
     z-index: 100;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .logo img {
     width: 130px;
@@ -191,7 +190,8 @@ p {
 }
 @media screen and (max-width:478px) {
     .header{
-        height: auto;
+        height: 80px;
+        align-items:center;
         padding-left: 30px;
     }
 }
@@ -296,9 +296,12 @@ p {
 /* aside */
 .sidebar {
    position: absolute;
-   top: 20px;
-   right: 10px;
+   top: 100px;
+   right: 40px;
    width: 250px;
+}
+.sidebar img {
+    object-fit: cover;
 }
 @media  screen and (max-width: 1385px) {
     .sidebar {
@@ -757,6 +760,7 @@ em {
  }
 .content-btn {
     margin-top: 30px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -765,15 +769,6 @@ em {
     width: 80%;
 }
 
-@media screen and (min-width: 768px) and (max-width:1024px) {
-    
-}
-@media screen and (max-width:768px) {
-  
-}
-@media screen and (max-width:478px) {
-   
-}
 
 /* footer */
 footer {
@@ -791,20 +786,23 @@ footer {
     align-items:center;
     height: 90px;
     border-bottom: 1px solid white;
-    flex-wrap: wrap;
 }
 .footer-logo {
     width: 132px;
     height: 65px;
 }
+.footer__top div {
+    display: flex;
+    justify-content: flex-start;
+}
 .copy {
     color: #fff;
     font-size: 12px;
     font-weight: 300;
-    text-align: center;
+    text-align: right;
     text-transform: uppercase;
     width: 100%;
-    margin-bottom: 20px;
+    margin-right: 20px;
 }
 .footer__bottom {
     display: flex;
@@ -825,4 +823,14 @@ footer {
 }
 .footer__bottom ul li a:hover {
     color:#1769ff;
+}
+
+@media screen and (max-width: 768px){
+    .footer__top {
+        flex-wrap: wrap;
+    }
+    .copy {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
