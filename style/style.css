@@ -293,8 +293,18 @@ p {
     }
  }
 
-
-
+/* aside */
+.sidebar {
+   position: absolute;
+   top: 20px;
+   right: 10px;
+   width: 250px;
+}
+@media  screen and (max-width: 1385px) {
+    .sidebar {
+        display: none;
+    }
+}
 
 /* banner */
 .banner {
