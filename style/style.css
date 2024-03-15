@@ -367,7 +367,6 @@ em {
 @media screen and (min-width: 768px) and (max-width:1024px) {
     .banner {
         min-height: 450px;
-        /* padding-top: 80px; */
         
     }
     .banner__box {
@@ -394,8 +393,6 @@ em {
         gap:20px;
     }
     .banner__box {
-        padding-left: 20px;
-        padding-right: 20px;
         margin-top: 30px;
         gap:30px;
     }
@@ -570,6 +567,7 @@ em {
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    width: 100%;
     max-width: 860px;
     margin: 0 auto;
     padding-top: 20px;
@@ -593,13 +591,14 @@ em {
 }
 .slot__box-item {
     position: relative;
-    max-width: 148px;
+    max-width: 138px;
     width: 100%;
     height: auto;
     
 }
 
 .slot__box-item img {
+    max-width: 138px;
     width: 100%;
     height: 148px;
     display: block;
@@ -610,7 +609,7 @@ em {
 
 .slot__box-item h4 {
     position: absolute;
-    width: 150px;
+    max-width: 150px;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%); 
@@ -620,7 +619,7 @@ em {
     color: #fff;
     font-size: 16px;
     font-weight: 600;
-    max-width: 100%;
+    width: 100%;
     text-align: center;
     text-transform: uppercase
 }
@@ -681,7 +680,7 @@ em {
 }
 @media screen and (max-width:768px) {
     .slot__box {
-        justify-content: center;
+        justify-content: flex-start;
     }
 }
 
