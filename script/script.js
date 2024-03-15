@@ -6,6 +6,12 @@ $(document).ready(function() {
   });
 });
 
+document.querySelector('.menu').addEventListener('click', function(e) {
+  e.preventDefault(); 
+  this.classList.toggle('active'); 
+  document.querySelector('.text-second').classList.toggle('shift-right'); 
+});
+
 window.onscroll = function() {
   let sidebar = document.querySelector('.sidebar');
   let footer = document.querySelector('footer');
