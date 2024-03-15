@@ -693,24 +693,31 @@ em {
     width: 100%;
     max-width: 860px;
     margin: 20px auto;
-    overflow-x: auto; /* Добавляет горизонтальную прокрутку при необходимости */
+    overflow-x: auto; 
   }
   
   table {
-    width: 100%; /* Задает ширину таблицы */
-    border-collapse: collapse; /* Убирает двойные границы между ячейками */
-    min-width: 600px; /* Минимальная ширина таблицы */
+    width: 100%; 
+    border-collapse: collapse; 
+    min-width: 600px; 
   }
   
   td {
-    border: 1px solid #ddd; /* Добавляет границу для ячеек */
-    padding: 8px; /* Добавляет внутренние отступы для ячеек */
-    white-space: nowrap; /* Текст в ячейках будет в одну строку */
+    border: none; 
+    padding: 8px; 
+    white-space: nowrap; 
+    
+  }
+  tr {
+    background-color: #ddd; 
+  }
+  tr:nth-child(odd) {
+    background-color:white;
   }
   
   @media (max-width: 600px) {
     .table-wrapper {
-      border: 1px solid #ddd; /* Добавляет границу вокруг прокручиваемой области */
+      border: 1px solid #ddd; 
     }
   }
 
