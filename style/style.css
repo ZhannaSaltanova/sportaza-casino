@@ -686,10 +686,12 @@ em {
 }
 
 /* table */
-/* .table {
+.table {
     width: 100%;
     max-width: 860px;
     margin: 20px auto;
+    overflow-x: auto; 
+    white-space: nowrap;
 }
 .info-table {
     width: 100%;
@@ -737,7 +739,7 @@ em {
       .info-data {
         width: 50%;
       }
-} */
+}
 
 /* content */
 
