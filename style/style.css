@@ -572,6 +572,7 @@ em {
     margin: 0 auto;
     padding-top: 20px;
     padding: 10px;
+    overflow: hidden;
 }
 .slot__title {
     display: flex;
@@ -680,7 +681,7 @@ em {
 }
 @media screen and (max-width:768px) {
     .slot__box {
-        justify-content: flex-start;
+        justify-content: center;
     }
 }
 
